@@ -1,0 +1,356 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	color: rgb(69,85,95);
+    font-size: 12px;
+}
+
+mark {
+    color: rgb(227,25,55);
+    background: none;
+}
+
+/******************************* LINK STYLES *****************************************/
+
+a {
+    text-decoration: none;
+    color: rgb(69,85,95);
+}
+
+.topactive {
+    color: rgb(227,25,55);
+}
+
+.footerlink {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.emaillink {
+    text-decoration: underline;
+}
+
+.subactive {
+    text-decoration: underline;
+}
+
+.redlink {
+    color: rgb(227,25,55);
+}
+
+.whitelink {
+    color: #FFF;
+}
+
+.bluelink {
+	color: rgb(0,164,228);
+}
+
+.whitetext {
+	color: #FFF;
+}
+
+.lighttext {
+	color: rgb(196,198,200);
+}
+
+/******************************* HEADER *****************************************/
+
+h1 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/******************************* FOOTER *****************************************/
+
+.footer {
+    color: #FFF;
+    font-size: 13px;
+}
+
+/******************************* BODY CONTENT - BASIC *************************************/
+
+h3 {
+    font-size: 22px;
+}
+
+h4  {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h7 {
+	font-size: 30px;
+	font-weight: 300px;
+	line-height: 1em;
+}
+
+h8 {
+	font-size: 20px;
+	font-weight: 150px;
+	line-height: 1.25em;
+	text-align: center;
+	color: rgb(196,198,200);
+}
+
+h9 {
+	font-size: 36px;
+}
+
+h10 {
+	font-size: 16px;
+	font-weight: 150px;
+	line-height: 1.25em;
+}
+
+.centertext {
+	text-align: center;
+	line-height: 1.5em;
+}
+
+/******************************* HOMEPAGE *************************************/
+
+.button {
+	text-align: center;
+}
+
+.spotlighttext {
+	color: #FFF;
+	line-height: 1.6em;
+}
+
+/******************************* OAB TEAM *************************************/
+
+.bulletpoints {
+    font-size: 12px;
+}
+
+/******************************* FRENQUENTLY ASKED QUESTIONS *************************************/
+
+.faqquestions {
+    font-size: 14px;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+.questions {
+    color: rgb(227,25,55);
+}
+
+/*******************************  RESOURCE COLORS *************************************/
+
+.orange {
+    color: rgb(238,154,26);
+}
+
+.green {
+    color: rgb(145,190,58);
+}
+
+.teal {
+    color: rgb(0,177,176);
+}
+
+.darkblue {
+    color: rgb(0,118,190);
+}
+
+.purple {
+    color: rgb(113,111,179);
+}
+
+.lightblue {
+	color: rgb(0,164,228);
+}
+
+
+/******************************* MEDALLION STATUS *************************************/
+
+.medallionstatusbutton h4 {
+	line-height: 1.25em;
+}
+
+.visitlevel {
+	text-align: center;
+}
+
+.bronze {
+	color: rgb(207,151,71);
+}
+
+.silver {
+	color: rgb(197,199,201);
+}
+
+.gold {
+	color: rgb(207,171,74);
+}
+
+.platinum {
+	color: rgb(228,227,226);
+}
+
+.honorable {
+	color: rgb(0,164,228);
+}
+
+/******************************* H2 VISIT TOURNAMENT *************************************/
+
+.campaigntitle {
+    text-align: center;
+}
+
+.tournamenttrips{
+    text-align: center;
+}
+
+/******************************* THE OFFICE HUNGER GAMES *************************************/
+
+.ohgtitle {
+    color: rgb(238,154,26);
+}
+
+.ohgsubtitle {
+    color: rgb(238,154,26);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ohgintro {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.ohgvictor {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.ohgdates {
+    text-align: center;
+}
+
+/******************************* MBA PROGRAM *************************************/
+
+.mbaquickfacts h6 {
+	color: #FFF;
+}
+
+.mbaquickfacts p {
+	color: #FFF;
+}
+
+.mbatext p {
+	margin-top: 0px;
+}
+
+.mbatext h10 {
+	margin: 0px;
+}
+
+/******************************* OAB BLOG *************************************/
+
+.blogpost h3 {
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.blogpost h4 {
+    margin-top: 3px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.blogbacktotop h4 {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.blogbacktotop a {
+    color: rgb(227,25,55);
+}
+
+.blogpost ul a {
+    text-decoration: underline;
+}
+
+.bluetext {
+	color: rgb(0,164,228);
+}
+
+.sectionheading {
+	color: rgb(0,164,228);
+}
+
+/******************************* OAB BLOG - WEEKND BETS*************************************/
+
+.citytitle {
+    color: rgb(0,164,228);
+}
+
+/******************************* OAB BLOG - BLOGGER BIO *************************************/
+
+.bloggerbio {
+    font-style: italic;
+}
+
+/******************************* OAB BLOG - ARCHIVES *************************************/
+
+.blogarchive h10 {
+	line-height: 2em;
+}
+
+.blogarchive h9 {
+	line-height: 2em;
+}
+
+.blogarchive p {
+	text-decoration: underline;
+	margin: 0px 0px 0px 30px;
+}
+
+.blogarchive p a {
+	color: rgb(0,164,228);
+}
+
+
+
+
+/*
+Dark  - rgb(69,85,95)
+Light - rgb(196,198,200)
+Red   - rgb(227,25,55)
+Orange - rgb(238,154,26)
+Light Green - rgb(145,190,58)
+Dark Blue - rgb(0,125,177)
+Dark Green - rgb(0,177,176)
+Cross - rgb(35,48,56)
+
+BLOG BLUE - rgb(0,164,228)
+
+EAB COLORS:
+Orange - #ee881d;
+Blue - #0065bd;
+EAB - rgb(0,118,190)
+
+
+MEDALLION COLORS:
+Bronze - rgb(207,151,71)
+Silver - rgb(197,199,201)
+Gold - rgb(207,171,74)
+Platinum - rgb(228,227,226)
+
+/*
+
+

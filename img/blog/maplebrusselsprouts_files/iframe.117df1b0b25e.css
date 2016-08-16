@@ -1,0 +1,296 @@
+/* Styling for buttons. */
+
+#chicory-button {
+  display: inline-block !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding: 12px 20px !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+  text-transform: capitalize;
+  color: white !important;
+  text-decoration: none !important;
+  -webkit-transition: background 0.2s ease-in-out !important;
+  -moz-transition: background 0.2s ease-in-out !important;
+  -o-transition: background 0.2s ease-in-out !important;
+  transition: background 0.2s ease-in-out !important;
+  background: #0bc8cf !important;
+  border: none !important;
+  width: auto !important;
+  border-radius: 0 !important;
+}
+  #chicory-button:hover {
+  	background: #30d0d6 !important;
+  	cursor: pointer !important;
+  }
+  #chicory-button:active {
+  	background: #0bbec5 !important;
+  }
+  #chicory-button:focus {
+  	outline: none !important;
+  }
+
+/* Styling for iframe popup and containers. */
+#chicory-widget {
+  max-width: 70em !important;
+  margin: 0 auto !important;
+}
+
+.chicory-bg {
+  display: block !important;
+  background: black !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0) !important;
+  opacity: 0 !important;
+  -webkit-transition: opacity 0.7s 0.3s !important;
+  -webkit-transition-delay: ease !important;
+  -moz-transition: opacity 0.7s 0.3s ease !important;
+  -o-transition: opacity 0.7s 0.3s ease !important;
+  transition: opacity 0.7s 0.3s ease !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.chicory-bg.chicory-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+  opacity: 1 !important;
+}
+
+.chicory-bg.chicory-disabled {
+  visibility: hidden !important;
+}
+
+#chicory-modal {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: -2000px !important;
+  margin-left: -375px !important;
+  width: 750px !important;
+  height: 612px !important;
+  background: white !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transition: margin-top 0.5s ease-in-out !important;
+  -moz-transition: margin-top 0.5s ease-in-out !important;
+  -o-transition: margin-top 0.5s ease-in-out !important;
+  transition: margin-top 0.5s ease-in-out !important;
+  border: 0 !important;
+}
+
+/* line 46, ../../../sass/layout/_modal.scss */
+.chicory-active #chicory-modal {
+  margin-top: -306px !important;
+}
+
+#chicory-iframe {
+	overflow: hidden !important;
+	display: block !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+
+/* Styling for experimental dynamic button. */
+
+#chicory-button-container {
+  display: inline-block !important;
+  font-family: "Open Sans", sans-serif !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  -webkit-transition: background 0.2s ease-in-out !important;
+  -moz-transition: background 0.2s ease-in-out !important;
+  -o-transition: background 0.2s ease-in-out !important;
+  transition: background 0.2s ease-in-out !important;
+	background: rgb(245, 245, 245) !important;
+  border: 1px solid rgb(155, 155, 155) !important;
+  border-radius: 5px !important;
+  margin: 5px !important;
+  box-sizing: content-box !important;
+}
+
+  #chicory-button-container.experiment-one {
+	  padding: 5px !important;
+	  min-width: 230px !important;
+  }
+  #chicory-button-container.experiment-two {
+    padding: 6px 10px !important;
+    white-space: nowrap !important;
+    overflow: auto !important;
+  }
+
+#chicory-button-left-container {
+  font: normal 12px/22px 'Open Sans', sans-serif !important;
+  margin-right: 5px !important;
+  float: left !important;
+  color: rgb(135, 135, 135) !important;
+  display: inline-block;
+}
+
+#chicory-button-per-serving {
+  font-weight: 100 !important;
+  color: rgb(135, 135, 135) !important;
+}
+  #chicory-button-per-serving.experiment-one {
+    font-size: 10px !important;
+  }
+  #chicory-button-per-serving.experiment-two {
+    font-size: 12px !important;
+  }
+
+#chicory-button-icons-logo-peapod-stop_and_shop {
+  background-image: url("/static/widget_v2/img/peapod_stop_and_shop.25f285e3f929.png") !important;
+  margin: auto !important;
+  height: 40px !important;
+  width: 105px !important;
+  display: block !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+#chicory-button-price-container {
+  display: block !important;
+}
+
+#chicory-button-right-container {
+  display: inline-block !important;
+}
+
+  #chicory-button.experiment-one {
+    border-radius: 5px !important;
+    position: relative !important;
+  }
+  #chicory-button.experiment-two {		
+    border-radius: 5px !important;
+  }
+		
+#this-recipe {
+  text-overflow: ellipsis !important;
+  font-size: 12px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  max-width: 170px !important;
+  display: inline-block !important;
+  position: relative !important;
+  top: 4px !important;
+}
+
+.chicory_ad_campaign {
+  margin: 10px 0 !important;
+  width: 275px !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content {
+  height: 58px !important;
+  margin: 0 !important;
+  border: 1px solid black !important;
+  box-sizing: content-box !important;
+  background: white !important;
+  text-align: left !important;
+  display: -webkit-box !important;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box !important;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox !important;      /* TWEENER - IE 10 */
+  display: -webkit-flex !important;     /* NEW - Chrome */
+  display: flex !important;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.chicory_ad_campaign .chicory_ad_content .brand_creative {
+  width: 50px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content .grocer_creative {
+  width: 75px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  -webkit-box-flex: 1 !important;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1 !important;         /* OLD - Firefox 19- */
+  -webkit-flex: 1 !important;          /* Chrome */
+  -ms-flex: 1 !important;              /* IE 10 */
+  flex: 1 !important;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.chicory_ad_campaign .chicory_ad_content img {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content .campaign_text {
+  width: 150px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  box-sizing: border-box !important;
+  line-height: 14px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content .campaign_text .main_text {
+  width: 100% !important;
+  color: #484848 !important;
+  font-size: 10px !important;
+  margin-top: 5px !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content .campaign_text .sub_text {
+  width: 100% !important;
+  color: #f89d29 !important;
+  font-size: 9px !important;
+  margin-bottom: 2px !important;
+}
+
+.chicory_ad_campaign .chicory_ad_content .campaign_text .cta {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 8px !important;
+  font-weight: 600 !important;
+  padding: 3px 20px !important;
+  letter-spacing: 1px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  text-decoration: none !important;
+  -webkit-transition: background 0.2s ease-in-out !important;
+  -moz-transition: background 0.2s ease-in-out !important;
+  -o-transition: background 0.2s ease-in-out !important;
+  transition: background 0.2s ease-in-out !important;
+  background: #0bc8cf !important;
+  border: none !important;
+  width: auto !important;
+  border-radius: 0 !important;
+}
+
+.chicory_ad_campaign .chicory_ad_disclaimer {
+  text-align: right !important;
+  font-size: 9px !important;
+  color: gray !important;
+  margin-top: 2px !important;
+}
+
+@media only screen
+  and (max-device-width: 450px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .chicory_ad_campaign {
+    width: 225px !important;
+  }
+
+  .chicory_ad_campaign .chicory_ad_content .grocer_creative {
+    width: 25px !important;
+    display: none !important;
+  }
+}

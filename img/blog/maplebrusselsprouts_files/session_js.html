@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0042)http://chicoryapp.com/widget_v2/session_js -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="jquery.min(1).js"></script>
+<script>
+
+  $.ajax('/widget_v2/session', {
+    type: 'GET',
+    dataType: 'json',
+    cache: false,
+    headers: {
+      'X-Session': localStorage.getItem('uuid'),
+      'X-Json': localStorage.getItem('experiments')
+    },
+    data: {
+      publisher: document.referrer
+    }
+  }).done(function(data) {
+    localStorage.setItem('uuid', data.uuid);
+    localStorage.setItem('experiments', JSON.stringify(data.experiments));
+
+    parent.postMessage(JSON.stringify({
+      uuid: data.uuid,
+      experiments: data.experiments,
+      exclude_from_programmatic: data.exclude_from_programmatic
+    }), document.referrer);
+  });
+
+</script></head><body></body></html>

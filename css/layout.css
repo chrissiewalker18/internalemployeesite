@@ -1,0 +1,1115 @@
+body {
+    background-color: #EEE;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+td {
+	vertical-align: top;
+}
+
+.container {
+    max-width: 1000px;
+	padding-top: 1em;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+    width: 90%;
+}
+
+.bannerbox {
+    max-width: 1050px;
+    box-shadow: 0px 1px 15px -1px;
+    background-color: #FFF;
+}
+
+.homecontainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Bodycontainer {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 5em 1em 5em;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: #FFF;
+    padding-bottom: 30px;
+}
+
+.promocontainer {
+	padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+	padding-bottom: 200px;
+    background-color: #FFF;
+}
+
+/*******************************HEADER + BANNER ***********************************/
+
+.OABLogo {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+    margin-left: 6%;
+    box-shadow: 0px 1px 3px -1px;
+}
+
+h1 {
+    display: inline;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+ul {
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+
+.TopNav {
+    text-align: right;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    border-bottom: solid 4px rgb(227,25,55);
+}
+
+
+/******************************* BODY NAV *****************************************/
+
+h2 {
+    display: inline-block;
+    margin: 0px;
+    margin-left: -.25em;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    margin-top: 5px;
+}
+
+h2+h2 {
+    border-left: solid 2px rgb(196,198,200);
+}
+
+.BodyNav {
+    text-align: center;
+    background-color: #FFF;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-top: solid 2px rgb(196,198,200);
+}
+
+/******************************* FOOTER ***************************************/
+
+.footer {
+    background-color: rgb(69,85,95);
+    text-align: center;
+    padding: .5em 0em .5em 0em;
+    margin: 0px;
+}
+
+/******************************* HOMEPAGE ***************************************/
+
+.dailyleadbutton {	
+	float: right;
+    width: 28%;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: 25px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(0,164,228);
+    border-radius: 10px;
+    clear: right;
+}
+
+.checkyourleadsbutton {
+	float: right;
+    width: 28%;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: 25px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(196,198,200);
+    border-radius: 10px;
+    clear: right;
+}
+
+.passaleadbutton {
+	float: right;
+    width: 28%;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: 25px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+    clear: right;
+}
+
+.oabhighlightbox {
+	background-color: #FFF;
+	float: left;
+    width: 69%;
+    height: 235px;
+    margin-top: 20px;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+.campaigncorner td{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.newhirebox {
+    float: left;
+    width: 32%;
+    height: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 25px;
+    padding: 1em 4em 1em 2em;
+    background-color: #FFF;
+}
+
+.OABeachbox {
+    float: left;
+    width: 32%;
+    height: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 23px;
+    background-color: #FFF;
+}
+
+.productspotlightbox {	
+	float: left;
+    width: 31%;
+    height: 300px;
+    margin-top: 25px;
+    padding: 1em 4em 1em 2em;
+    background-color: rgb(0,164,228);
+    color: #FFF;
+}
+
+.resourcesbox {
+	float: left;
+    width: 31%;
+    height: 300px;
+    margin-top: 25px;
+    background-color: rgb(69,85,95);
+    color: #FFF;
+}
+
+.medallionstatusbox {
+	float: left;
+	width: 40%;
+    height: 188px;
+    margin-top: 25px;
+    background-color: #FFF;
+    color: #FFF;
+    margin-right: 3%;
+    clear: left;
+}
+
+.ambassadorbox {
+	float: left;
+	width: 40%;
+    height: 188px;
+    margin-top: 25px;
+    background-color: rgb(0,164,228);
+    color: #FFF;
+    margin-right: 3%;
+    clear: left;
+}
+
+.videobox {
+	background-color: #FFF;
+	float: right;
+    width: 57%;
+    height: 400px;
+    margin-top: 25px;
+    padding: 1em 4em 1em 2em;
+}
+
+.homepagetitle {
+	border-bottom: solid 1px rgb(196,198,200);
+}
+
+.homepagevideo {
+	margin-top: 10px;	
+}
+
+.beakerpic {
+    float: left;
+    max-width: 10%;
+    margin: 5px 5% 10px 0px;
+}
+
+/*******************************  ABOUT - ABOUT OAB ***************************************/
+
+.incentives {
+    margin-bottom: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sectionbreak {
+    border-bottom: solid 1px rgb(196,198,200);
+}
+
+/******************************* ABOUT - Meet the OAB Team + Ambassadors *******************************/
+
+.profile {
+    line-height: 1.25em;
+    border-top: solid 1px rgb(196,198,200);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.headshot {
+    float: left;
+    width: 20%;
+    clear: both;
+    text-align: center;
+    max-width: 200px;
+}
+
+.bio {
+    float: left;
+    max-width: 70%;
+    margin-left: 30px;
+}
+
+.bio p {
+    margin-top: 0px;
+}
+
+.bulletpoints {
+    margin-left: 20px;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+h5 {
+    margin: 0px 0px 15px 0px;
+}
+
+.subprofile {
+    line-height: 1.25em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/******************************* RESOURCES HOME PAGE ***************************************/
+
+.resourcelegend {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width:100%;
+	color: #fff;
+	text-align: center;
+}
+
+.strategylegend {
+	background: rgb(0,177,176);
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.caredeliverylegend {
+	background: rgb(238,154,26);
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.operationslegend {
+	background: rgb(145,190,58);
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.industrylegend {
+	background: rgb(0,164,228);
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.eablegend {
+	background: #0065bd;
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.abilegend {
+	background: rgb(113,111,179);
+	padding: 0px 15px 10px 15px;
+	border: 4px solid #fff;
+}
+
+.whitebutton {
+	background: #FFF;
+	padding: 5px;
+	margin: 25px;
+}
+
+/******************************* RESOURCES - TABLES ***************************************/
+
+.productheader {
+	margin: 25px 0px 25px 0px;
+}
+
+.purpletable td {
+	border: 4px solid rgb(113,111,179);
+	padding: 15px;
+}
+
+.tealtable td {
+    border: 4px solid rgb(0,177,176);
+    padding: 15px;
+}
+
+.tealtable {
+    border: 4px solid rgb(0,177,176);
+    padding: 15px;
+}
+
+.orangetable td {
+    border: 4px solid rgb(238,154,26);
+    padding: 15px;
+}
+
+.greentable td {
+    border: 4px solid rgb(145,190,58);
+    padding: 15px;
+}
+
+
+.lightbluetable td {
+    border: 4px solid rgb(0,164,228);
+    padding: 15px;
+}
+
+.darkbluetable td {
+    border: 4px solid rgb(0,118,190);
+    padding: 15px;
+}
+
+/******************************* RESOURCES - PRODUCT PAGES **********************************/
+
+.productpage {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.physicianrelatedproducts {
+	background-color: rgb(238,154,26);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.marginrelatedproducts {
+	background-color: rgb(145,190,58);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.valuerelatedproducts {
+	background-color: rgb(0,125,177);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.growthrelatedproducts {
+	background-color: rgb(0,177,176);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.crossrelatedproducts {
+	background-color: rgb(35,48,56);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.eabrelatedproducts {
+	background-color: rgb(0,118,190);
+	padding: 15px 15px 15px 15px;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+/******************************* CAMPAIGNS OVERVIEW *************************************/
+
+.campaigntable {
+	margin: 0 0 30px 0;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.campaigntable td {
+	padding: 15px;
+}
+
+.chatterimage {
+	border: 1px solid rgb(196,198,200);
+}
+
+/******************************* CAMPAIGNS - MEDALLION STATUS *************************************/
+
+
+
+.medallionstatusbutton {
+	float: right;
+    width: 25%;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+    clear: right;
+}
+
+.medallionstatus {
+	margin: 25px 5px 50px 5px;
+	border-radius: 20px;
+	border: 10px solid rgb(69,85,95);
+}
+
+.toreach {
+	width: 23%;
+	float: left;
+	height: 120px;
+	margin-top: 25px;
+	margin-left: 5%;
+	border-right: 1px solid rgb(196,198,200);
+	padding-top: 25px;
+	margin-bottom: 25px
+}
+
+.youwillneed {
+	width: 15%;
+	float: left;
+	height: 120px;
+	margin-top: 25px;
+	border-right: 1px solid rgb(196,198,200);
+	padding-top: 25px;
+	margin-bottom: 25px
+}
+
+.visitlevel {
+	width: 34%;
+	float: left;
+	height: 120px;
+	margin-top: 25px;
+	border-right: 1px solid rgb(196,198,200);
+	padding-top: 40px;
+	margin-bottom: 25px
+}
+
+.statuslogo {
+	max-width: 20%;
+	float: right;
+	height: 120px;
+	margin-right: 5%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	clear: right;
+}
+
+.statusrow + .statusrow {
+	border-top: 5px solid rgb(69,85,95);
+	border-radius: 20px;
+}
+
+
+/******************************* CAMPAIGNS - TOURNAMENT *************************************/
+
+.tournamentbanner {
+	margin-top: 15px;
+}
+
+.campaignsection {
+    line-height: 1.25em;
+    border-top: solid 1px rgb(196,198,200);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tournamenttrips {
+    max-width: 90%;
+    margin: 30px 5% 30px 5%;
+}
+
+.campaignsection h5 {
+    margin-bottom: 0px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.bracketcontainer {
+	background-color: #FFF;
+}
+
+.largebracket {
+	width: 100%;
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 200px;
+}
+
+/******************************* CAMPAIGNS - OFFICE HUNGER GAMES *************************************/
+
+.ohgtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.ohglist {
+    float: left;
+    max-width: 40%;
+    margin: 25px 5% 25px 5%;
+    line-height: 1.5em;
+}
+
+.ohgvictor {
+    clear: both;
+    max-width: 90%;
+    margin: 10px 5% 35px 5%;
+}
+
+.ohgmentors {
+    margin-bottom: 25px;
+}
+
+/******************************* CAMPAIGNS - NASACAR *************************************/
+
+.nasacarbutton {
+	float: right;
+    width: 35%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+    clear: right;
+}
+
+.prizes {
+	text-align: center;
+	border: dashed 1px;
+	margin: 30px 40px 10px 40px;
+	padding: 10px 10px 0px 10px;
+}
+
+/******************************* CAMPAIGNS - MBA PROGRAM *************************************/
+
+.mbaquickfacts {
+	float: right;
+    width: 30%;
+    background-color: rgb(69,85,95);
+    padding: 15px;
+    margin: 0px 0px 20px 10%;
+    clear: both;
+}
+
+.mbapic {
+    float: left;
+    width: 60%;
+    padding-bottom: 15px;
+    margin: 0px 0px 0px 0%;
+}
+
+.quickfactstitle {
+	text-align: center;
+	border-bottom: dotted 1px #FFF;
+	padding-bottom: 5px;
+}
+
+.mbabutton {
+	float: right;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+    clear: right;
+}
+
+.mbatext {
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+
+.mbablogbox {
+	background-color: #ededee;
+	margin: 30px 0px 20px 0px;
+	padding: 15px 10px 0px 10px;
+	text-align: center;
+	border-top: solid 2px rgb(227,25,55);
+}
+
+.mbablogtext {
+	float: left;
+	width: 46%;
+	margin: 25px 0% 10px 4%;
+	text-align: left;
+}
+
+/******************************* CAMPAIGNS - THE AMAZING RACE *************************************/
+
+.racebutton {
+	float: right;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(145,190,58);
+    border-radius: 10px;
+    clear: right;
+}
+
+.videoright {
+	float: right;
+	clear: right;
+	margin: 10px 0px 20px 8%;
+}
+
+.racetext {
+	line-height: 1.5em;
+	margin-bottom: 25px;
+}
+
+/******************************* CAMPAIGNS - NASARISK *************************************/
+
+.riskbanner {
+	margin-bottom: 25px;
+}
+
+.riskbutton {
+	float: right;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(69,85,96);
+    border-radius: 10px;
+    clear: right;
+}
+
+
+/******************************* CAMPAIGNS - NASA FOOTBALL LEAGUE *************************************/
+
+.NFLtext {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+    line-height: 1.75em;
+    background-color: rgb(29,54,102);
+}
+
+.nflbutton {
+    float: left;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(29,54,102);
+    border-radius: 10px;
+}
+/******************************* CAMPAIGNS - MARKETER ASCENT *************************************/
+
+.ascentbutton {
+    float: right;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(0,176,175);
+    border-radius: 10px;
+    clear: right;
+}
+
+
+/******************************* CAMPAIGNS - HCAB ROAD TO 100 PERCENT *************************************/
+
+.hcabbanner {
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(196,198,200);
+    margin-bottom: 25px;
+}
+
+.hcabtext {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+    line-height: 1.75em;
+}
+
+.hcabpic {
+    float: left;
+    max-width: 30%;
+    margin: 5px 5% 10px 0px;
+}
+
+.hcabbutton {
+    float: left;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+}
+
+/******************************* OAB BLOG *************************************/
+
+.blogbody {
+}
+
+.Blogcontainer {
+    float: left;
+    max-width: 70%;
+    margin-left: 0;
+    margin-right: 2px;
+    padding: 0em 4em 1em 2em;
+}
+
+h6 {
+    margin: 0px;
+}
+
+.blognav {
+    float: right;
+    width: 29%;
+    margin-top: 15px;
+    padding: 1em 1em 1em 1em;
+    clear: right;
+}
+
+.blogbutton {
+    float: right;
+    width: 26%;
+    margin-left: 1px;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(227,25,55);
+    border-radius: 10px;
+    clear: right;
+}
+
+.dailyleadlibrarybutton {	
+	float: right;
+    width: 26%;
+    height: 60px;
+    margin-left: 1px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(0,164,228);
+    border-radius: 10px;
+    clear: right;
+}
+
+.blogbacktotop {
+    float: right;
+    width: 6%;
+    margin-right: 2%;
+    padding: .5em;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border: solid 1px rgb(227,25,55);
+    background-color: #FFF;
+}
+
+.blogpost {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.postfooter {
+    text-align: right;
+    padding: 10px 0px 10px 0px;
+    clear: both;
+}
+
+.blogpost+.blogpost {
+    border-top: solid 1px rgb(196,198,200);
+}
+
+.bulletpointsindent {
+    margin-left: 50px;
+}
+
+.blogskip {
+    text-align: right;
+}
+
+.indent {
+    margin-left: 3%;
+}
+
+.numberedlistspaced li {
+	margin-left: 3%;
+	margin-bottom: 1.25em;
+}
+
+.blogfloatimage {
+    float: right;
+    max-width: 40%;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    clear: right;
+}
+
+.blogfloatimagetop {
+    float: right;
+    max-width: 20%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    clear: right;
+}
+
+ol {
+    padding-left: 0px;
+    margin-left: 20px;
+}
+
+.leftblock {
+	float: left;
+	max-width: 46%;
+	margin-right: 2%;
+	margin-bottom: 25px;
+}
+
+.rightblock {
+	float: right;
+	max-width: 46%;
+	margin-left: 2%;
+	margin-bottom: 25px;
+}
+
+.centerbutton {
+    float: center;
+    width: 300px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 30%;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    box-shadow: 0px 1px 5px -1px;
+    background-color: rgb(69,85,96);
+    border-radius: 10px;
+    clear: center;
+}
+/******************************* OAB BLOG - DIVIDING SECTIONS *************************************/
+
+.sectionheading {
+	border-bottom: dotted 1px rgb(0,164,228);
+}
+
+/******************************* OAB BLOG - WEEKEND BETS *************************************/
+
+.citysection {
+    padding: 10px 0 0 0;
+    clear: both;
+}
+
+.citytitle {
+    border-bottom: dotted 1px rgb(0,164,228);
+    max-width: 69%;
+    margin: 5px 0 10px 0;
+}
+
+.betpic {
+    float: right;
+    max-width: 30%;
+    margin-bottom: 10px;
+}
+
+.bettext {
+    float: left;
+    max-width: 65%;
+    margin-right: 5%;
+}
+
+/******************************* OAB BLOG - LEAD PASSER OF THE MONTH ************************/
+
+.leadpassersection {
+	margin-bottom: 15px;
+}
+
+.leadpasser {
+	float: left;
+    max-width: 20%;
+    margin: 5px 5% 10px 0px;
+}
+
+.bronzetitle {
+	border-bottom: dotted 1px rgb(207,151,71);
+    margin: 5px 0 10px 0;
+    color: rgb(207,151,71);
+}
+
+.silvertitle {
+	border-bottom: dotted 1px rgb(197,199,201);
+    margin: 5px 0 10px 0;
+    color: rgb(197,199,201);
+}
+
+.goldtitle {
+	border-bottom: dotted 1px rgb(207,171,74);
+    margin: 5px 0 10px 0;
+    color: rgb(207,171,74);
+}
+
+.platinumtitle {
+	border-bottom: dotted 1px rgb(228,227,226);
+    margin: 5px 0 10px 0;
+    color: rgb(228,227,226);
+}
+
+.honorabletitle {
+	border-bottom: dotted 1px rgb(113,111,178);
+    margin: 5px 0 10px 0;
+    color: rgb(0,164,228);
+}
+/******************************* OAB BLOG - BLOGGER BIO *************************************/
+
+.bloggerbio {
+    margin-bottom: 20px;
+    border: dotted 1px rgb(196,198,200);
+    padding: 10px;
+}
+
+.blogheadshot {
+    float: left;
+    max-width: 18%;
+    margin-right: 2%;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.bloggerbiotext {
+    float: left;
+    max-width: 76%;
+    margin-left: 3%;
+}
+
+/******************************* OAB BLOG - INTERVIEWS *************************************/
+
+.interviewimage {
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 1px rgb(196,198,200);
+}
+
+/******************************* OAB BLOG - BUZZFEED STYLE *************************************/
+
+.buzzfeeditem {
+	margin-top: 20px;
+	width: 90%;
+}
+
+.gif {
+	margin-top: 20px;
+}
+
+/******************************* OAB BLOG - FEATURE PHOTO *************************************/
+
+.featurephoto {
+	width: 90%;
+	border: solid 1px rgb(196,198,200);
+	margin: 10px 5% 20px 5%;
+}
+
+.centerphoto {
+	max-width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.borderphoto {
+	width: 90%;
+	border: solid 1px rgb(196,198,200);
+}
+/******************************* OAB BLOG - ARCHIVES *************************************/
+
+.blogarchive {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	padding: 0em 4em 1em 2em;
+}

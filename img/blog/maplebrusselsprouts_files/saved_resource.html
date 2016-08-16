@@ -1,0 +1,158 @@
+
+<!-- saved from url=(0043)http://yunify.chicoryapp.com/api/init/#null -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="jquery.min(2).js"></script><script src="ua-parser.min.js"></script><script>(function() {
+    var ELAPSED_LIMIT = 1 * 86400000; // 1 day
+
+    var Gateway = function() {
+        this._device = {};
+
+        // lookup device and pass back to parent frame
+        this.getDevice().done(function(device) {
+            var data = {
+                device: device,
+                session: this.getSession(),
+                funnel: this.getFunnel()
+            }
+            parent.postMessage(JSON.stringify(data), document.referrer);
+        }.bind(this));
+
+        // install listener for remote invocation by parent frame
+        window.addEventListener("message", function(message) {
+            var func = this[message.data.call];
+            if (typeof(func) == 'undefined') return;
+            func.call(this, message.data.args);
+        }.bind(this));
+    };
+
+    Gateway.prototype.getDevice = function() {
+        var d = $.Deferred();
+        var uuid = localStorage.getItem('uuid');
+        var device = this._device;
+
+        // check if device has already been loaded
+        if (uuid && !$.isEmptyObject(device)) {
+            d.resolve(device);
+        }
+
+        // else load from server if uuid is known
+        else if (uuid) {
+            $.ajax('/api/device', {
+                type: 'GET',
+                dataType: 'json',
+                cache: false,
+                data: {uuid: uuid}
+            })
+            .done(function(device) {
+                // device was found
+                if (!$.isEmptyObject(device)) {
+                    this._device = device;
+                    d.resolve(device);
+                }
+                // create a new device but preserve the uuid
+                else {
+                    this.createDevice(uuid).done(d.resolve);
+                }
+            }.bind(this));
+        }
+
+        // otherwise create a new device and sync to server
+        else {
+            this.createDevice('767ab5be-5b40-43e2-b6d7-3a035d61b6a7').done(d.resolve);
+        }
+
+        return d.promise();
+    }
+
+    Gateway.prototype.createDevice = function(uuid) {
+        var d = $.Deferred();
+        var parser = new UAParser();
+        var browser = parser.getBrowser();
+        var os = parser.getOS();
+
+        this.saveDevice({
+            uuid: uuid,
+            browser: browser.name,
+            browser_version: browser.version,
+            platform: os.name,
+            platform_version: os.version,
+            screen_height: screen.height,
+            screen_width: screen.width,
+            screen_color: screen.colorDepth,
+            client_timestamp: new Date().getTime(),
+            external_ids: {},
+            properties: {},
+        }).done(d.resolve);
+
+        return d.promise();
+    }
+
+    Gateway.prototype.saveDevice = function(device) {
+        var d = $.Deferred();
+        var changed = (JSON.stringify(device) != JSON.stringify(this._device));
+        var expired = !device.last_updated || ((new Date().getTime() - device.last_updated) > ELAPSED_LIMIT);
+
+        // update only if device has changed or local storage cached version has expired
+        if (changed || expired) {
+            $.ajax('/api/device', {
+                type: 'POST',
+                contentType: 'application/json',
+                dataType: 'json',
+                cache: false,
+                data: JSON.stringify(device)
+            })
+            .done(function(device) {
+                localStorage.setItem('uuid', device.uuid);
+                this._device = device;
+                d.resolve(device);
+            });
+        }
+
+        // otherwise nothing to do
+        else {
+            d.resolve(device);
+        }
+
+        return d.promise();
+    }
+
+    Gateway.prototype.getSession = function() {
+        var session = JSON.parse(sessionStorage.getItem('session'));
+
+        // if none existent then create and save
+        if ($.isEmptyObject(session)) {
+            session = {
+                id: 'c114b0d1-3c7f-4d33-aacb-d729683d3e6f',
+                properties: {},
+            }
+            this.saveSession(session);
+        }
+
+        return session;
+    }
+
+    Gateway.prototype.saveSession = function(session) {
+        sessionStorage.setItem('session', JSON.stringify(session));
+    }
+
+    Gateway.prototype.getFunnel = function() {
+        var funnel = JSON.parse(sessionStorage.getItem('funnel'));
+
+        // if none existent or new funnel then create and save
+        if ($.isEmptyObject(funnel) || location.hash.indexOf('funnel') > -1) {
+            funnel = {
+                id: 'd50a2c80-63f4-4f68-9fe3-de69826b3195',
+                properties: {},
+            }
+            this.saveFunnel(funnel);
+            location.hash = null;
+        }
+
+        return funnel;
+    }
+
+    Gateway.prototype.saveFunnel = function(funnel) {
+        sessionStorage.setItem('funnel', JSON.stringify(funnel));
+    }
+
+    return new Gateway();
+})();</script></head><body></body></html>
